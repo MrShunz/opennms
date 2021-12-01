@@ -113,7 +113,11 @@ public class ConfigurationManagerServiceMock implements ConfigurationManagerServ
         } else if ("notifd".equals(configName)) {
             def = XsdHelper.buildConfigDefinition("notifd", "notifd-configuration.xsd",
                     "notifd-configuration", ConfigurationManagerService.BASE_PATH);
+        } else if ("snmp".equals(configName)) {
+            def = XsdHelper.buildConfigDefinition("snmp", "snmp-config.xsd",
+                    "snmp-config", ConfigurationManagerService.BASE_PATH);
         }
+
         return Optional.ofNullable(def);
     }
 
