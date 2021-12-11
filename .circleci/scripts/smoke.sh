@@ -53,7 +53,7 @@ export MAVEN_OPTS="-Xmx1g -Xms1g"
 cd ~/project/smoke-test
 if [ $SUITE = "minimal" ]; then
   echo "#### Executing minimal set smoke/system tests"
-  IT_TESTS="MenuHeaderIT,SinglePortFlowsIT"
+  IT_TESTS="MenuHeaderIT,SinglePortFlowsIT,IntegrationAPIIT"
   SUITE=core
 else
   find_tests
