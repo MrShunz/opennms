@@ -313,8 +313,6 @@
                 <descriptor>mvn:org.ops4j.pax.exam/pax-exam-features/${paxExamVersion}/xml</descriptor>
                 <!-- Pax Web features -->
                 <descriptor>mvn:org.ops4j.pax.web/pax-web-features/${paxWebVersion}/xml/features</descriptor>
-                <!-- OpenNMS Integration API features -->
-                <descriptor>mvn:org.opennms.integration.api/karaf-features/${opennmsApiVersion}/xml</descriptor>
 
                 <!-- Features for the OpenNMS-modified Karaf container -->
                 <descriptor>mvn:org.opennms.karaf/opennms/${project.version}/xml/spring</descriptor>
@@ -1145,6 +1143,15 @@
     <repository>
        <id>vaadin-addons</id>
        <url>https://maven.opennms.org/content/repositories/vaadin-addons/</url>
+       <snapshots><enabled>false</enabled></snapshots>
+       <releases><enabled>true</enabled></releases>
+    </repository>
+    <repository>
+        <id>sonatype.org-snapshot</id>
+        <name>Sonatype OSS Snapshots Repository</name>
+        <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        <releases><enabled>false</enabled></releases>
+        <snapshots><enabled>true</enabled></snapshots>
     </repository>
     <repository>
       <id>sonatype-public-repo</id>
